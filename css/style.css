@@ -241,12 +241,19 @@ button {
   flex-wrap: wrap;
 }
 
-.hebergements-cards .card {
+.hebergements-cards a {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   width: 31%;
   height: 200px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hebergements-cards a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .hebergements-cards img {
@@ -301,6 +308,17 @@ button {
   margin-top: 33px;
 }
 
+.populaires-cards a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.populaires-cards .card:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 .populaires-cards img {
   width: 33%;
   height: 136px;
@@ -342,6 +360,16 @@ button {
   justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.activity a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.activity-list a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .activity-card {
