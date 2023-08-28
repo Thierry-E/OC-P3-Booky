@@ -147,6 +147,7 @@ button {
   font-size: 18px;
   color: var(--white);
   text-align: center;
+  cursor: pointer;
 }
 
 .filters {
@@ -400,6 +401,8 @@ footer {
   background-color: var(--main-bg-color);
   display: flex;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer a {
@@ -410,12 +413,10 @@ footer a {
 .a-propos,
 .charte,
 .assistance {
+  width: 407px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
-
-  margin-right: 150px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
