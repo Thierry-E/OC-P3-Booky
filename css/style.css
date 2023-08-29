@@ -88,8 +88,7 @@ nav a {
   color: inherit;
 }
 
-nav a:hover,
-.selected {
+nav a:hover {
   color: var(--main-color);
   border-top: 3px solid var(--main-color);
   padding-top: 28px;
@@ -129,7 +128,6 @@ input {
   outline: none;
   font-size: 18px;
   color: inherit;
-  position: relative;
 }
 
 input::placeholder {
@@ -152,17 +150,16 @@ input::placeholder {
 }
 
 .btn-search-glass {
-  width: 49px;
-  height: 49px;
+  min-width: 49px;
+  min-height: 49px;
   background-color: var(--main-color);
   border: 2px solid var(--main-color);
-  border-radius: 15px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  position: absolute;
-  left: 501px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.35);
   display: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn-search-glass i {
@@ -490,7 +487,7 @@ footer a {
   /******Header******/
   header {
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   .logo {
@@ -503,15 +500,30 @@ footer a {
     align-items: flex-start;
     align-self: stretch;
     text-align: center;
+    width: 100%;
   }
 
   nav a {
-    width: 100%;
+    width: 50%;
   }
 
   nav a:hover {
     border-top: 0;
     border-bottom: 3px solid var(--main-color);
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
+
+  /******Section "hero-title"******/
+
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title h1 {
+    width: 100%;
+    font-size: 1.5rem;
   }
 
   /******Form******/
@@ -529,5 +541,22 @@ footer a {
 
   .btn-search-glass {
     display: flex;
+  }
+  /******Filters******/
+  .filters {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .filters-list {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .filter-container {
+    width: 45%;
+    margin-right: 0;
   }
 }
