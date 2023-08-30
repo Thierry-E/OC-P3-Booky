@@ -505,6 +505,7 @@ footer a {
 
   nav a {
     width: 50%;
+    height: 32px;
   }
 
   nav a:hover {
@@ -515,6 +516,9 @@ footer a {
   }
 
   /******Section "hero-title"******/
+  .hero {
+    margin-bottom: 0;
+  }
 
   .hero-title {
     display: flex;
@@ -558,5 +562,21 @@ footer a {
   .filter-container {
     width: 45%;
     margin-right: 0;
+  }
+  /******Section "Hébergements et populaires"******/
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .populaires {
+    border-radius: 0;
+  }
+
+  .populaires-cards {
+    flex-direction: column;
+  }
+
+  .populaires-cards .card {
+    width: 100%;
   }
 }
