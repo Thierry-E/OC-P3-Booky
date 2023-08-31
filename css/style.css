@@ -563,6 +563,10 @@ footer a {
     width: 45%;
     margin-right: 0;
   }
+
+  .filter-container span {
+    font-size: 14px;
+  }
   /******Section "Hébergements et populaires"******/
   .hebergements-and-populaires {
     flex-direction: column-reverse;
