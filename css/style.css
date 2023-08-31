@@ -545,6 +545,7 @@ footer a {
 
   .btn-search-glass {
     display: flex;
+    border-radius: 15px;
   }
   /******Filters******/
   .filters {
@@ -602,10 +603,19 @@ footer a {
     width: 100%;
   }
 
+  .link {
+    margin-top: 55px;
+  }
+
   /******Section Activités******/
   .activity-list {
     flex-direction: column;
     gap: 35px;
+  }
+
+  #activites {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .activity-list a {
@@ -616,5 +626,9 @@ footer a {
   footer {
     flex-direction: column;
     gap: 35px;
+  }
+
+  footer a {
+    font-size: 0.9rem;
   }
 }
