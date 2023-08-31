@@ -485,6 +485,10 @@ footer a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /******Header******/
+  .main-container {
+    padding: 0;
+  }
+
   header {
     flex-direction: column;
     gap: 30px;
@@ -601,6 +605,7 @@ footer a {
 
   .hebergements-cards a {
     width: 100%;
+    margin-top: 52px;
   }
 
   .link {
@@ -619,16 +624,13 @@ footer a {
   }
 
   .activity-list a {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   /******Footer******/
   footer {
     flex-direction: column;
     gap: 35px;
-  }
-
-  footer a {
-    font-size: 0.9rem;
   }
 }
