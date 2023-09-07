@@ -634,4 +634,10 @@ footer a {
     flex-direction: column;
     gap: 35px;
   }
+
+  .a-propos,
+  .charte,
+  .assistance {
+    width: 100%;
+  }
 }
